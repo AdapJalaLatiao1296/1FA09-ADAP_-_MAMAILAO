@@ -6,7 +6,11 @@
 # exponents, I could focus entirely on implementing the distance formula correctly.
 # Without the math library, building an accurate square root function would require 
 # many extra lines of iterative math logic, making the code harder to read and debug.
-# ==============================================================================def calculate_distance(x1: float, y1: float, x2: float, y2: float) -> float:
+# ============================================================================== 
+
+import math
+
+def calculate_distance(x1: float, y1: float, x2: float, y2: float) -> float:
     """Calculate the Euclidean distance between two 2D points."""
     return math.hypot(x2 - x1, y2 - y1)
 
