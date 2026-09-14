@@ -1,0 +1,28 @@
+# ==============================================================================
+# REFLECTION:
+# Using a library is more practical because it provides pre-tested, highly 
+# optimized functions like sqrt() and pow(), saving time and reducing bugs. 
+# Without the math library, implementing algorithms for square roots from scratch 
+# would require complex, manual iterative logic like Newton's method, making 
+# the code unnecessarily long and prone to errors.
+# ==============================================================================
+
+def main():
+    # Gather user inputs exactly as requested
+    x1 = float(input("Enter x1: "))
+    y1 = float(input("Enter y1: "))
+    x2 = float(input("Enter x2: "))
+    y2 = float(input("Enter y2: "))
+    
+    # Calculate components using pow()
+    x_difference_squared = math.pow(x2 - x1, 2)
+    y_difference_squared = math.pow(y2 - y1, 2)
+    
+    # Calculate final distance using sqrt()
+    distance = math.sqrt(x_difference_squared + y_difference_squared)
+    
+    # Display the result rounded to 2 decimal places
+    print(f"\nThe distance between the two points is: {distance:.2f}")
+
+if __name__ == "__main__":
+    main()
